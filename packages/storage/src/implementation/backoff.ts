@@ -78,7 +78,6 @@ export function start(
       return;
     }
     if (success) {
-      clearGlobalTimeout();
       triggerCallback.call(null, success, ...args);
       return;
     }
